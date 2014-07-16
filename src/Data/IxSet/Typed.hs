@@ -216,7 +216,7 @@ import GHC.Exts (Constraint)
 -- The type-level list 'ixs' contains all types that are valid index keys.
 -- The type 'a' is the type of elements in the indexed set.
 data IxSet (ixs :: [*]) (a :: *) where
-  IxSet :: !(Set a) -> IxList ixs a -> IxSet ixs a
+  IxSet :: !(Set a) -> !(IxList ixs a) -> IxSet ixs a
 
 data IxList (ixs :: [*]) (a :: *) where
   Nil   :: IxList '[] a
