@@ -175,6 +175,7 @@ module Data.IxSet.Typed
      groupBy,
      groupAscBy,
      groupDescBy,
+     rebuild,
 
      -- * Index creation helpers
      flatten,
